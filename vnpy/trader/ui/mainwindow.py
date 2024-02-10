@@ -3,6 +3,7 @@ Implements main window of the trading platform.
 """
 
 from types import ModuleType
+from PySide6.QtCore import Qt
 import webbrowser
 from functools import partial
 from importlib import import_module
@@ -214,10 +215,10 @@ class MainWindow(QtWidgets.QMainWindow):
             self.toolbar.addAction(action)
 
     def create_dock(
-        self,
-        widget_class: QtWidgets.QWidget,
-        name: str,
-        area: int
+            self,
+            widget_class: QtWidgets.QWidget,
+            name: str,
+            area: int
     ) -> Tuple[QtWidgets.QWidget, QtWidgets.QDockWidget]:
         """
         Initialize a dock widget.
@@ -229,7 +230,10 @@ class MainWindow(QtWidgets.QMainWindow):
         dock: QtWidgets.QDockWidget = QtWidgets.QDockWidget(name)
         dock.setWidget(widget)
         dock.setObjectName(name)
-        dock.setFeatures(dock.DockWidgetFloatable | dock.DockWidgetMovable)
+
+        # PySide6中不需要设置DockWidget的特定功能，因为它默认就是可浮动和可移动的
+        # dock.setFeatures(dock.features() | Qt.DockWidgetFloatable | Qt.DockWidgetMovable)  # 移除这行
+
         self.addDockWidget(area, dock)
         return widget, dock
 
