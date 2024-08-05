@@ -12,7 +12,7 @@ from vnpy.trader.ui import MainWindow, create_qapp
 # from vnpy_sec import SecGateway
 # from vnpy_uft import UftGateway
 # from vnpy_esunny import EsunnyGateway
-from vnpy_xtp import XtpGateway
+# from vnpy_xtp import XtpGateway
 # from vnpy_tora import ToraStockGateway
 # from vnpy_tora import ToraOptionGateway
 # from vnpy_comstar import ComstarGateway
@@ -36,6 +36,7 @@ from vnpy_ctabacktester import CtaBacktesterApp
 # from vnpy_rpcservice import RpcServiceApp
 # from vnpy_excelrtd import ExcelRtdApp
 from vnpy_datamanager import DataManagerApp
+from vnpy_mongodb import mongodb_database
 # from vnpy_datarecorder import DataRecorderApp
 # from vnpy_riskmanager import RiskManagerApp
 # from vnpy_webtrader import WebTraderApp
@@ -58,7 +59,7 @@ def main():
     # main_engine.add_gateway(SecGateway)    
     # main_engine.add_gateway(UftGateway)
     # main_engine.add_gateway(EsunnyGateway)
-    main_engine.add_gateway(XtpGateway)
+    # main_engine.add_gateway(XtpGateway)
     # main_engine.add_gateway(ToraStockGateway)
     # main_engine.add_gateway(ToraOptionGateway)
     # main_engine.add_gateway(OesGateway)
