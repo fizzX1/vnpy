@@ -25,9 +25,9 @@ SETTINGS: Dict[str, Any] = {
     "email.sender": "",
     "email.receiver": "",
 
-    "datafeed.name": "",
-    "datafeed.username": "",
-    "datafeed.password": "",
+    "datafeed.name": "tushare",
+    "datafeed.username": "token",
+    "datafeed.password": "78282dabb315ee578fb73a9b328f493026e97d5af709acb331b7b348",
 
     "database.timezone": get_localzone_name(),
     "database.name": "mongodb",

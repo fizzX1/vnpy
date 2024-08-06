@@ -232,8 +232,7 @@ class MainWindow(QtWidgets.QMainWindow):
         dock.setWidget(widget)
         dock.setObjectName(name)
 
-        # PySide6中不需要设置DockWidget的特定功能，因为它默认就是可浮动和可移动的
-        # dock.setFeatures(dock.features() | Qt.DockWidgetFloatable | Qt.DockWidgetMovable)  # 移除这行
+        dock.setFeatures(dock.DockWidgetFeature.DockWidgetFloatable | dock.DockWidgetFeature.DockWidgetMovable)
 
         self.addDockWidget(area, dock)
         return widget, dock
