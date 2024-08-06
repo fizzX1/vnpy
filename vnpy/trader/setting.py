@@ -31,9 +31,9 @@ SETTINGS: Dict[str, Any] = {
 
     "database.timezone": get_localzone_name(),
     "database.name": "mongodb",
-    "database.database": "vnpy",
+    "database.database": "admin",
     "database.host": "homes.fizzx.top",
-    "database.port": 27107,
+    "database.port": 27017,
     "database.user": "root",
     "database.password": "sf83ndfkwjm2#dnBb"
 }
