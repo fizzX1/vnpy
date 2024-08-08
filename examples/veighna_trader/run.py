@@ -23,7 +23,7 @@ from vnpy.trader.ui import MainWindow, create_qapp
 # from vnpy_tts import TtsGateway
 # from vnpy_ost import OstGateway
 # from vnpy_hft import GtjaGateway
-
+import vnpy_tushare
 # from vnpy_paperaccount import PaperAccountApp
 from vnpy_ctastrategy import CtaStrategyApp
 from vnpy_ctabacktester import CtaBacktesterApp
