@@ -27,7 +27,7 @@ SETTINGS: Dict[str, Any] = {
 
     "datafeed.name": "tushare",
     "datafeed.username": "token",
-    "datafeed.password": "78282dabb315ee578fb73a9b328f493026e97d5af709acb331b7b348",
+    "datafeed.password": "502bcbdbac29edf1c42ed84d5f9bd24d63af6631919820366f53e5d4",
 
     "database.timezone": get_localzone_name(),
     "database.name": "mongodb",
